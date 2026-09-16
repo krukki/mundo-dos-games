@@ -1,7 +1,0 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="The Legend of Zelda: Tears of the Kingdom">
-  <rect width="800" height="450" fill="#ededea"/>
-  <rect x="0.5" y="0.5" width="799" height="449" fill="none" stroke="#dddad4"/>
-  <circle cx="400" cy="196" r="46" fill="none" stroke="#c3bfb7" stroke-width="2"/>
-  <path d="M386 176 L418 196 L386 216 Z" fill="#c3bfb7"/>
-  <text x="400" y="286" font-family="Helvetica, Arial, sans-serif" font-size="23" letter-spacing="0.5" fill="#8d887f" text-anchor="middle">The Legend of Zelda: Tears of the Kingdom</text>
-</svg>
