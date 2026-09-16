@@ -1,10 +1,16 @@
+/*
+  Paleta monocromática de vermelho + preto como neutro (regra 60-30-10):
+  60% vermelho (fundo), 30% preto (texto, linhas), 10% tom claro de vermelho (cards).
+*/
 :root {
-  --fundo: #050505;
-  --superficie: #ffffff;
-  --texto: purple;
-  --suave: lightblue;
-  --linha: purple;
-  --destaque: #c2410c;
+  --fundo: #e53935;
+  --fundo-translucido: rgba(229, 57, 53, 0.92);
+  --vermelho-escuro: #b71c1c;
+  --superficie: #fdeceb;
+  --texto: #0b0b0b;
+  --suave: #2e0a09;
+  --linha: #0b0b0b;
+  --destaque: #0b0b0b;
 }
 
 * {
@@ -18,7 +24,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-family: "Rajdhani", "Segoe UI", Arial, sans-serif;
+  font-size: 1.05rem;
   background: var(--fundo);
   color: var(--texto);
   line-height: 1.7;
@@ -35,14 +42,14 @@ body {
   flex-wrap: wrap;
   gap: 1rem 2rem;
   padding: 1.25rem 2.5rem;
-  background: black;
+  background: var(--fundo-translucido);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--linha);
+  border-bottom: 2px solid var(--linha);
 }
 
 .marca {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--texto);
@@ -58,11 +65,12 @@ nav ul {
 
 nav a {
   font-size: 0.85rem;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--suave);
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -84,6 +92,7 @@ main {
 
 .rotulo {
   font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--destaque);
@@ -92,7 +101,7 @@ main {
 
 .capa h1 {
   font-size: clamp(2.75rem, 7vw, 4.5rem);
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
   margin-bottom: 1.75rem;
@@ -106,7 +115,7 @@ main {
 .genero,
 .motivos {
   padding: 4.5rem 0;
-  border-top: 1px solid var(--linha);
+  border-top: 2px solid var(--linha);
 }
 
 .genero-cabecalho {
@@ -117,6 +126,7 @@ main {
 .numero {
   display: block;
   font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.22em;
   color: var(--destaque);
   margin-bottom: 0.9rem;
@@ -124,7 +134,7 @@ main {
 
 .genero-cabecalho h2 {
   font-size: clamp(1.7rem, 3.5vw, 2.2rem);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
 }
@@ -141,7 +151,7 @@ main {
 
 .card {
   background: var(--superficie);
-  border: 1px solid var(--linha);
+  border: 2px solid var(--linha);
   border-radius: 4px;
   overflow: hidden;
   display: flex;
@@ -149,12 +159,12 @@ main {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  border-color: #cfcac2;
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--linha);
 }
 
 .card img {
@@ -162,32 +172,34 @@ main {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
-  border-bottom: 1px solid var(--linha);
+  border-bottom: 2px solid var(--linha);
 }
 
 .card-texto {
+  flex: 1;
   padding: 1.75rem;
-  background-color: #050505;
+  background: var(--superficie);
 }
 
 .card-texto h3 {
   font-size: 1.15rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: -0.01em;
   margin-bottom: 0.4rem;
 }
 
 .meta {
   font-size: 0.75rem;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: purple;
+  color: var(--vermelho-escuro);
   margin-bottom: 1rem;
 }
 
 .card-texto p:last-child {
   font-size: 0.95rem;
-  color: purple;
+  color: var(--suave);
 }
 
 .lista-motivos {
@@ -200,7 +212,7 @@ main {
   counter-increment: motivo;
   position: relative;
   padding: 1.5rem 0 1.5rem 3.75rem;
-  border-bottom: 1px solid var(--linha);
+  border-bottom: 2px solid var(--linha);
   color: var(--suave);
   font-size: 0.95rem;
 }
@@ -211,6 +223,7 @@ main {
   left: 0;
   top: 1.5rem;
   font-size: 0.8rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--destaque);
 }
@@ -218,13 +231,13 @@ main {
 .lista-motivos strong {
   display: block;
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--texto);
   margin-bottom: 0.2rem;
 }
 
 footer {
-  border-top: 1px solid var(--linha);
+  border-top: 2px solid var(--linha);
   margin-top: 2rem;
   padding: 2.5rem;
   display: flex;
@@ -232,9 +245,10 @@ footer {
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 0.8rem;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--suave);
+  color: var(--texto);
 }
 
 @media (max-width: 640px) {
