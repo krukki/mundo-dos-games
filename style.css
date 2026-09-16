@@ -1,9 +1,9 @@
 :root {
-  --fundo: #faf9f7;
+  --fundo: #050505;
   --superficie: #ffffff;
-  --texto: #1c1b19;
-  --suave: #6d6a64;
-  --linha: #e4e1db;
+  --texto: purple;
+  --suave: lightblue;
+  --linha: purple;
   --destaque: #c2410c;
 }
 
@@ -35,7 +35,7 @@ body {
   flex-wrap: wrap;
   gap: 1rem 2rem;
   padding: 1.25rem 2.5rem;
-  background: rgba(250, 249, 247, 0.9);
+  background: black;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--linha);
 }
@@ -164,6 +164,7 @@ main {
 
 .card-texto {
   padding: 1.75rem;
+  background-color: #050505;
 }
 
 .card-texto h3 {
@@ -177,13 +178,13 @@ main {
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--suave);
+  color: purple;
   margin-bottom: 1rem;
 }
 
 .card-texto p:last-child {
   font-size: 0.95rem;
-  color: var(--suave);
+  color: purple;
 }
 
 .lista-motivos {
