@@ -7,55 +7,199 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Mundo dos Games</h1>
+  <header class="topo">
+    <a class="marca" href="#inicio">Mundo dos Games</a>
     <nav>
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#jogos">Jogos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#aventura">Aventura</a></li>
+        <li><a href="#estrategia">Estratégia</a></li>
+        <li><a href="#corrida">Corrida</a></li>
+        <li><a href="#esporte">Esporte</a></li>
+        <li><a href="#motivos">Motivos</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="inicio">
-      <h2>Bem-vindo ao Mundo dos Games</h2>
-      <p>O seu ponto de encontro para notícias, análises e novidades do universo dos videogames.</p>
+    <section id="inicio" class="capa">
+      <p class="rotulo">Guia de gêneros</p>
+      <h1>Mundo dos Games</h1>
+      <p class="subtitulo">
+        Uma seleção enxuta dos quatro gêneros que definem os videogames modernos,
+        com dois títulos essenciais em cada um deles.
+      </p>
     </section>
 
-    <section id="jogos">
-      <h2>Jogos em destaque</h2>
-      <div class="jogos-grid">
-        <article class="jogo-card">
-          <h3>Jogo 1</h3>
-          <p>Uma breve descrição sobre esse jogo incrível.</p>
+    <section id="aventura" class="genero">
+      <div class="genero-cabecalho">
+        <span class="numero">01</span>
+        <h2>Jogos de Aventura</h2>
+        <p>Mundos abertos, exploração livre e narrativas que conduzem o jogador por longas jornadas.</p>
+      </div>
+      <div class="grade">
+        <article class="card">
+          <img src="imagens/zelda-totk.svg" alt="The Legend of Zelda: Tears of the Kingdom">
+          <div class="card-texto">
+            <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+            <p class="meta">Nintendo Switch &middot; 2023</p>
+            <p>
+              Link explora o reino de Hyrule na terra, no céu e no subterrâneo. O destaque está nos
+              poderes de construção, que permitem montar veículos e engenhocas para resolver puzzles
+              e enfrentar inimigos da maneira que o jogador preferir.
+            </p>
+          </div>
         </article>
-        <article class="jogo-card">
-          <h3>Jogo 2</h3>
-          <p>Uma breve descrição sobre esse jogo incrível.</p>
-        </article>
-        <article class="jogo-card">
-          <h3>Jogo 3</h3>
-          <p>Uma breve descrição sobre esse jogo incrível.</p>
+        <article class="card">
+          <img src="imagens/red-dead-2.svg" alt="Red Dead Redemption 2">
+          <div class="card-texto">
+            <h3>Red Dead Redemption 2</h3>
+            <p class="meta">PC, PlayStation, Xbox &middot; 2018</p>
+            <p>
+              Ambientado no fim do velho oeste americano, acompanha Arthur Morgan e a gangue de Dutch
+              van der Linde. Une um mundo aberto extremamente detalhado a uma história madura sobre
+              lealdade, culpa e o fim de uma era.
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <p>O Mundo dos Games é um site feito por e para apaixonados por games.</p>
+    <section id="estrategia" class="genero">
+      <div class="genero-cabecalho">
+        <span class="numero">02</span>
+        <h2>Jogos de Estratégia</h2>
+        <p>Planejamento, gestão de recursos e decisões de turno que definem o rumo de cada partida.</p>
+      </div>
+      <div class="grade">
+        <article class="card">
+          <img src="imagens/baldurs-gate-3.svg" alt="Baldur's Gate 3">
+          <div class="card-texto">
+            <h3>Baldur's Gate 3</h3>
+            <p class="meta">PC, PlayStation, Xbox &middot; 2023</p>
+            <p>
+              RPG tático baseado nas regras de Dungeons &amp; Dragons, com combate por turnos e enorme
+              liberdade de escolha. Cada conversa, aliança ou rolagem de dado altera o rumo da
+              campanha, tornando praticamente impossível repetir a mesma história.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="imagens/persona-3-reload.svg" alt="Persona 3 Reload">
+          <div class="card-texto">
+            <h3>Persona 3 Reload</h3>
+            <p class="meta">PC, PlayStation, Xbox &middot; 2024</p>
+            <p>
+              Remake do clássico da Atlus, divide o tempo entre a rotina escolar e os combates por
+              turnos na Tartarus. Explorar fraquezas elementares e administrar o calendário e os laços
+              sociais são tão decisivos quanto a força do grupo.
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Envie um e-mail para <a href="mailto:contato@mundodosgames.com">contato@mundodosgames.com</a></p>
+    <section id="corrida" class="genero">
+      <div class="genero-cabecalho">
+        <span class="numero">03</span>
+        <h2>Jogos de Corrida</h2>
+        <p>Velocidade, controle preciso e pistas que recompensam a curva perfeita.</p>
+      </div>
+      <div class="grade">
+        <article class="card">
+          <img src="imagens/forza-horizon-5.svg" alt="Forza Horizon 5">
+          <div class="card-texto">
+            <h3>Forza Horizon 5</h3>
+            <p class="meta">PC, Xbox &middot; 2021</p>
+            <p>
+              Um festival de corridas em um México aberto, com centenas de carros licenciados e
+              provas que vão do asfalto ao off-road. A direção equilibra realismo e acessibilidade,
+              agradando tanto o iniciante quanto o piloto experiente.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="imagens/mario-kart-8.svg" alt="Mario Kart 8 Deluxe">
+          <div class="card-texto">
+            <h3>Mario Kart 8 Deluxe</h3>
+            <p class="meta">Nintendo Switch &middot; 2017</p>
+            <p>
+              O kart arcade mais popular do mundo, com pistas antigravidade, itens caóticos e
+              multijogador local para até quatro pessoas. Simples de aprender, mas com curvas,
+              derrapagens e atalhos que exigem domínio real.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="esporte" class="genero">
+      <div class="genero-cabecalho">
+        <span class="numero">04</span>
+        <h2>Jogos de Esporte</h2>
+        <p>Simulações fiéis das grandes ligas, com times, atletas e temporadas licenciadas.</p>
+      </div>
+      <div class="grade">
+        <article class="card">
+          <img src="imagens/nba-2k.svg" alt="NBA 2K">
+          <div class="card-texto">
+            <h3>NBA 2K</h3>
+            <p class="meta">PC, PlayStation, Xbox, Switch</p>
+            <p>
+              A principal simulação de basquete, com todas as equipes da NBA e animações fiéis aos
+              jogadores reais. Modos como MyCAREER e MyTEAM permitem construir um atleta do zero ou
+              montar o elenco dos sonhos.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="imagens/fifa.svg" alt="FIFA">
+          <div class="card-texto">
+            <h3>FIFA</h3>
+            <p class="meta">PC, PlayStation, Xbox, Switch</p>
+            <p>
+              O futebol mais jogado do planeta, com ligas, estádios e uniformes oficiais. Entre
+              partidas rápidas, o modo Carreira e o Ultimate Team, atende tanto quem joga no sofá
+              quanto quem disputa competições online.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="motivos" class="motivos">
+      <div class="genero-cabecalho">
+        <span class="numero">05</span>
+        <h2>5 motivos para jogar</h2>
+        <p>Muito além do passatempo, os jogos eletrônicos trazem ganhos concretos no dia a dia.</p>
+      </div>
+      <ol class="lista-motivos">
+        <li>
+          <strong>Raciocínio e tomada de decisão</strong>
+          Jogos de estratégia exigem planejar vários passos à frente e escolher sob pressão.
+        </li>
+        <li>
+          <strong>Reflexos e coordenação</strong>
+          Corridas e partidas esportivas treinam tempo de reação e precisão nos comandos.
+        </li>
+        <li>
+          <strong>Narrativas memoráveis</strong>
+          As aventuras contam histórias com a mesma força de um bom livro ou filme.
+        </li>
+        <li>
+          <strong>Convívio e trabalho em equipe</strong>
+          Modos cooperativos e online aproximam pessoas e ensinam a jogar junto.
+        </li>
+        <li>
+          <strong>Descanso com foco</strong>
+          Uma partida bem escolhida ajuda a relaxar e a recarregar a concentração.
+        </li>
+      </ol>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Mundo dos Games. Todos os direitos reservados.</p>
+    <p>Mundo dos Games</p>
+    <p>&copy; 2026 &middot; Todos os direitos reservados</p>
   </footer>
 </body>
 </html>
